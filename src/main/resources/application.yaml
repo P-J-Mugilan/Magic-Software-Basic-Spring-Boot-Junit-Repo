@@ -1,3 +1,14 @@
 spring:
   application:
-    name: basic-crud-with-junit
+    name: basic-crud-with-junit   # App name (used in logs)
+
+  profiles:
+    active: dev   # dev → MySQL, test → H2
+
+  jpa:
+    hibernate:
+      ddl-auto: update       # Auto create/update tables
+    show-sql: true           # Print SQL queries
+
+server:
+  port: 8080
