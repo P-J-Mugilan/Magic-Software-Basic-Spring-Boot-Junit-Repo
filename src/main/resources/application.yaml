@@ -3,7 +3,7 @@ spring:
     name: basic-crud-with-junit   # App name (used in logs)
 
   profiles:
-    active: dev   # dev → MySQL, test → H2
+    active: test   # dev → MySQL, test → H2
 
   jpa:
     hibernate:
